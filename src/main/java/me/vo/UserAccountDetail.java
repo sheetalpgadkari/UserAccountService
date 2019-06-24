@@ -2,15 +2,15 @@ package me.vo;
 
 public class UserAccountDetail
 {
-    private String displayNumer;
+    private String displayNumber;
     private String displayName;
 
-    public String getDisplayNumer() {
-        return displayNumer;
+    public String getDisplayNumber() {
+        return displayNumber;
     }
 
-    public void setDisplayNumer(String displayNumer) {
-        this.displayNumer = displayNumer;
+    public void setDisplayNumber(String displayNumber) {
+        this.displayNumber = displayNumber;
     }
 
     public String getDisplayName() {

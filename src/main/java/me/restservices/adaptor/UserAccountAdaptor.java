@@ -10,7 +10,8 @@ public class UserAccountAdaptor
     public ViewUserAccountDetail toViewUserAccountDetail(UserAccountDetail userAccountDetail)
     {
         ViewUserAccountDetail viewUserAccountDetail = new ViewUserAccountDetail();
-        viewUserAccountDetail.setNumber(userAccountDetail.getDisplayNumer());
+        viewUserAccountDetail.setNumber(userAccountDetail.getDisplayNumber());
+        viewUserAccountDetail.setName( userAccountDetail.getDisplayName());
         return viewUserAccountDetail;
     }
 }

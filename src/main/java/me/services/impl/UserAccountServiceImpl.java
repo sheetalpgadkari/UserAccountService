@@ -16,7 +16,7 @@ public class UserAccountServiceImpl implements UserAccountService
         List<UserAccountDetail> userAccountDetailList = new ArrayList<>();
         UserAccountDetail userAccountDetail = new UserAccountDetail();
         userAccountDetail.setDisplayName("Test 1");
-        userAccountDetail.setDisplayNumer("33333");
+        userAccountDetail.setDisplayNumber("33333");
         userAccountDetailList.add(userAccountDetail);
         return userAccountDetailList;
     }
