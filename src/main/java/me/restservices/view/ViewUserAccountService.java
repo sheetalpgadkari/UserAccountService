@@ -1,6 +1,7 @@
 package me.restservices.view;
 
 import me.restservices.adaptor.UserAccountAdaptor;
+import me.restservices.auth.AuthService;
 import me.restservices.vo.ViewUserAccountDetail;
 import me.services.UserAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +16,12 @@ import java.util.stream.Collectors;
 public class ViewUserAccountService
 {
 
+
+    @Autowired
+    private AuthService demoAuthService;
+
     @Autowired
     private UserAccountService userAccountService;
-
 
     @Autowired
     private UserAccountAdaptor userAccountAdaptor;
@@ -27,10 +31,12 @@ public class ViewUserAccountService
     public List<ViewUserAccountDetail> list()
     {
         return
-            userAccountService.list(Long.valueOf(3)).stream()
+            userAccountService.list(demoAuthService.getAuthUserId()).stream()
             .map( userAccountDetail -> userAccountAdaptor.toViewUserAccountDetail(userAccountDetail))
             .collect(Collectors.toList());
 
     }
+
+
 
 }

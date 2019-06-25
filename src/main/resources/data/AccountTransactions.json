@@ -1,0 +1,30 @@
+[
+  {
+    "id": 10,
+    "accountNumber": "123-2223-212",
+    "name": "Current Account",
+    "date" : "2019-05-30T23:28:56.782Z",
+    "currency" : "SGD",
+    "Amount" :  9540.51,
+    "type" : "CREDIT"
+  },
+  {
+    "id": 11,
+    "accountNumber": "123-2223-212",
+    "name": "Current Account",
+    "date" : "2019-05-30T23:28:56.782Z",
+    "currency" : "SGD",
+    "Amount" :  7497.51,
+    "type" : "CREDIT"
+  },
+  {
+    "id": 12,
+    "accountNumber": "123-2223-212",
+    "name": "Current Account",
+    "date" : "2019-05-30T23:28:56.782Z",
+    "currency" : "SGD",
+    "Amount" :  6497.51,
+    "type" : "CREDIT"
+  }
+]
+

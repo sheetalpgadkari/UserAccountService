@@ -1,0 +1,21 @@
+[
+    {
+      "id": 10,
+      "displayNumber": "585309209",
+      "name": "SGSavings726",
+      "userId" : 2002,
+      "accountType" : "Saving",
+      "currency" : "SGD",
+      "balanceAmount" :  84327.51
+    },
+    {
+      "id": 11,
+      "displayNumber": "7911066619",
+      "name": "AUSavings933",
+      "userId" : 2002,
+      "accountType" : "Current",
+      "currency" : "AUD",
+      "balanceAmount" :  88005.93
+    }
+  ]
+

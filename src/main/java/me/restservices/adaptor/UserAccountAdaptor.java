@@ -11,7 +11,10 @@ public class UserAccountAdaptor
     {
         ViewUserAccountDetail viewUserAccountDetail = new ViewUserAccountDetail();
         viewUserAccountDetail.setNumber(userAccountDetail.getDisplayNumber());
-        viewUserAccountDetail.setName( userAccountDetail.getDisplayName());
+        viewUserAccountDetail.setName( userAccountDetail.getName());
+        viewUserAccountDetail.setAccountType(userAccountDetail.getAccountType());
+        viewUserAccountDetail.setCurrency(userAccountDetail.getCurrency());
+        viewUserAccountDetail.setBalanceAmount(userAccountDetail.getBalanceAmount());
         return viewUserAccountDetail;
     }
 }
