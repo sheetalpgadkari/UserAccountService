@@ -15,6 +15,7 @@ public class UserAccountAdaptor
         viewUserAccountDetail.setAccountType(userAccountDetail.getAccountType());
         viewUserAccountDetail.setCurrency(userAccountDetail.getCurrency());
         viewUserAccountDetail.setBalanceAmount(userAccountDetail.getBalanceAmount());
+        viewUserAccountDetail.setBalanceDate(userAccountDetail.getBalanceDate());
         return viewUserAccountDetail;
     }
 }

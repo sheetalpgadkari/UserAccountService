@@ -3,6 +3,7 @@ package me.restservices.vo;
 import me.vo.Currency;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 public class ViewUserAccountDetail
 {
@@ -12,6 +13,7 @@ public class ViewUserAccountDetail
     private String accountType;
     private Currency currency;
     private BigDecimal balanceAmount;
+    private Date balanceDate;
 
     public String getNumber() {
         return number;
@@ -51,5 +53,13 @@ public class ViewUserAccountDetail
 
     public void setBalanceAmount(BigDecimal balanceAmount) {
         this.balanceAmount = balanceAmount;
+    }
+
+    public Date getBalanceDate() {
+        return balanceDate;
+    }
+
+    public void setBalanceDate(Date balanceDate) {
+        this.balanceDate = balanceDate;
     }
 }

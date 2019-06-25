@@ -1,6 +1,7 @@
 package me.vo;
 
 import java.math.BigDecimal;
+import java.util.Date;
 
 public class UserAccountDetail
 {
@@ -11,6 +12,7 @@ public class UserAccountDetail
     private String accountType;
     private Currency currency;
     private BigDecimal balanceAmount;
+    private Date balanceDate;
 
     public String getDisplayNumber() {
         return displayNumber;
@@ -66,5 +68,13 @@ public class UserAccountDetail
 
     public void setBalanceAmount(BigDecimal balanceAmount) {
         this.balanceAmount = balanceAmount;
+    }
+
+    public Date getBalanceDate() {
+        return balanceDate;
+    }
+
+    public void setBalanceDate(Date balanceDate) {
+        this.balanceDate = balanceDate;
     }
 }
