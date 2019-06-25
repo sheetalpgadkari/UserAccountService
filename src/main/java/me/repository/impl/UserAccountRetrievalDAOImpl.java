@@ -1,7 +1,7 @@
 package me.repository.impl;
 
 import com.google.gson.Gson;
-import me.repository.UserAccountDAO;
+import me.repository.UserAccountRetrievalDAO;
 import me.vo.UserAccountDetail;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
@@ -13,13 +13,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component("userAccountDAO")
-public class UserAccountDAOImpl implements UserAccountDAO
+@Component("userAccountRetrievalDAO")
+public class UserAccountRetrievalDAOImpl implements UserAccountRetrievalDAO
 {
     public static final String CLASSPATH_DATA_USER_ACCOUNT_DETAIL_JSON = "classpath:data/UserAccountDetail.json";
 
     List<UserAccountDetail> userAccountDetailList = new ArrayList<>();
-    private UserAccountDAOImpl()
+    private UserAccountRetrievalDAOImpl()
     {
         init();
     }

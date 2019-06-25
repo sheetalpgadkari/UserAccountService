@@ -1,26 +1,21 @@
-package me.vo;
+package me.restservices.vo;
+
+import me.vo.Currency;
+import me.vo.TransactionType;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
-public class AccountTransactionDetail
+public class ViewAccountTransactionDetail
 {
-    private Long id;
     private String accountNumber;
     private String accountName;
     private Date date;
     private Currency currency;
-    private BigDecimal transactionAmount;
+    private BigDecimal creditAmount;
+    private BigDecimal debitAmount;
     private TransactionType transactionType;
     private String transactionNarrative;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getAccountNumber() {
         return accountNumber;
@@ -70,11 +65,19 @@ public class AccountTransactionDetail
         this.transactionNarrative = transactionNarrative;
     }
 
-    public BigDecimal getTransactionAmount() {
-        return transactionAmount;
+    public BigDecimal getCreditAmount() {
+        return creditAmount;
     }
 
-    public void setTransactionAmount(BigDecimal transactionAmount) {
-        this.transactionAmount = transactionAmount;
+    public void setCreditAmount(BigDecimal creditAmount) {
+        this.creditAmount = creditAmount;
+    }
+
+    public BigDecimal getDebitAmount() {
+        return debitAmount;
+    }
+
+    public void setDebitAmount(BigDecimal debitAmount) {
+        this.debitAmount = debitAmount;
     }
 }

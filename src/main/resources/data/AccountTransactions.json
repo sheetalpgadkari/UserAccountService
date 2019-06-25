@@ -2,29 +2,48 @@
   {
     "id": 10,
     "accountNumber": "123-2223-212",
-    "name": "Current Account",
+    "accountName": "Current Account",
     "date" : "2019-05-30T23:28:56.782Z",
     "currency" : "SGD",
-    "Amount" :  9540.51,
-    "type" : "CREDIT"
+    "transactionAmount" :  9540.51,
+    "transactionType" : "CREDIT",
+    "transactionNarrative" : "to buy book"
   },
   {
     "id": 11,
     "accountNumber": "123-2223-212",
-    "name": "Current Account",
+    "accountName": "Current Account",
     "date" : "2019-05-30T23:28:56.782Z",
     "currency" : "SGD",
-    "Amount" :  7497.51,
-    "type" : "CREDIT"
+    "transactionAmount" :  7497.51,
+    "transactionType" : "CREDIT"
   },
   {
     "id": 12,
     "accountNumber": "123-2223-212",
-    "name": "Current Account",
+    "accountName": "Current Account",
     "date" : "2019-05-30T23:28:56.782Z",
     "currency" : "SGD",
-    "Amount" :  6497.51,
-    "type" : "CREDIT"
+    "transactionAmount" :  6497.51,
+    "transactionType" : "CREDIT"
+  },
+  {
+    "id": 13,
+    "accountNumber": "123-2223-212",
+    "accountName": "Current Account",
+    "date" : "2019-04-30T23:28:56.782Z",
+    "currency" : "SGD",
+    "transactionAmount" :  647.51,
+    "transactionType" : "DEBIT"
+  },
+  {
+    "id": 14,
+    "accountNumber": "123-2223-215",
+    "accountName": "Current Account",
+    "date" : "2019-05-30T23:28:56.782Z",
+    "currency" : "SGD",
+    "transactionAmount" :  45.51,
+    "transactionType" : "DEBIT"
   }
 ]
 

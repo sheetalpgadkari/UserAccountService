@@ -3,7 +3,7 @@ package me.restservices.view;
 import me.restservices.adaptor.UserAccountAdaptor;
 import me.restservices.auth.AuthService;
 import me.restservices.vo.ViewUserAccountDetail;
-import me.services.UserAccountService;
+import me.services.UserAccountRetrievalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +21,7 @@ public class ViewUserAccountService
     private AuthService demoAuthService;
 
     @Autowired
-    private UserAccountService userAccountService;
+    private UserAccountRetrievalService userAccountService;
 
     @Autowired
     private UserAccountAdaptor userAccountAdaptor;

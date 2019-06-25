@@ -1,7 +1,7 @@
 package me.repository.impl;
 
 import com.google.gson.Gson;
-import me.repository.AccountTransactionDAO;
+import me.repository.AccountTransactionRetrievalDAO;
 import me.vo.AccountTransactionDetail;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
@@ -11,15 +11,16 @@ import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
-@Component("accountTransactionDAO")
-public class AccountTransactionDAOImpl implements AccountTransactionDAO
+@Component("accountTransactionRetrievalDAO")
+public class AccountTransactionRetrievalDAOImpl implements AccountTransactionRetrievalDAO
 {
 
     private List<AccountTransactionDetail> accountTransactionDetails = new ArrayList<>();
     public static final String CLASSPATH_DATA_ACCOUNT_TRANSACTION_DETAILS_JSON = "classpath:data/AccountTransactions.json";
 
-    private AccountTransactionDAOImpl()
+    private AccountTransactionRetrievalDAOImpl()
     {
         init();
     }
@@ -40,8 +41,11 @@ public class AccountTransactionDAOImpl implements AccountTransactionDAO
             throw new RuntimeException(e);
         }
     }
+
     @Override
-    public List<AccountTransactionDetail> getAccountTransactions(Long userId) {
-        return null;
+    public List<AccountTransactionDetail> getAccountTransactions(String accountNumber) {
+        return accountTransactionDetails.stream()
+                .filter( accountTransactionDetail -> accountNumber.equals(accountTransactionDetail.getAccountNumber()))
+                .collect(Collectors.toList());
     }
 }

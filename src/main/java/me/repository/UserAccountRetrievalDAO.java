@@ -4,7 +4,7 @@ import me.vo.UserAccountDetail;
 
 import java.util.List;
 
-public interface UserAccountDAO
+public interface UserAccountRetrievalDAO
 {
     List<UserAccountDetail> getUserAccount(Long userId);
 }
