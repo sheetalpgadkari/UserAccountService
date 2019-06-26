@@ -6,11 +6,10 @@
 
 **Endpoints for the service**
 
-http://hostname:port/ViewUserAccount/list
-
-http://hostname:port/AccountTransaction/123-2223-212
+1) http://hostname:port/ViewUserAccount/list
+2) http://hostname:port/AccountTransaction/123-2223-212
 
 **Account data is read from this json files**
 
-UserAccountDetail - resources/data/UserAccountDetail.json
-AccountTransactions - resources/data/AccountTransactions.json
+1) UserAccountDetail - resources/data/UserAccountDetail.json
+2) AccountTransactions - resources/data/AccountTransactions.json
