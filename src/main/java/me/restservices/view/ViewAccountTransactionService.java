@@ -15,8 +15,6 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping(value = "AccountTransaction")
 public class ViewAccountTransactionService {
-    @Autowired
-    private AuthService demoAuthService;
 
     @Autowired
     private AccountTransactionAdaptor accountTransactionAdaptor;
